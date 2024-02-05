@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Sixtyfour&display=swap');
+
+:root {
+    --pink-color: #ab1648;
+}
+
+* {
+    text-decoration: none !important;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* BACKGROUNDA SHEKIL QOYMAQ */
+header {
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+/* HEADER(INTRODUCTION & ABOUT US */
+.intro-left p {
+    font-family: 'Sixtyfour', sans-serif;
+    color: rgb(156, 14, 97);
+}
+
+
+.introduction .intro-right a {
+    color: rgb(156, 14, 97);
+}
+
+.introduction .intro-right {
+    display: none;
+}
+
+
+
+.about-us h3 {
+    color: #413f40;
+    width: 300px;
+}
+
+.about-us .about-us-left,
+.about-us-right {
+    border: 0.1px solid rgb(60, 59, 60);
+    border-radius: 14px;
+    transform: scale(0.95);
+    transition: 1.1s ease;
+    padding: 50px;
+    margin-bottom: 120px;
+
+}
+
+.about-us .about-us-left:hover,
+.about-us-right:hover {
+    transform: scale(1);
+}
+
+
+.about-us {
+    margin: 0 20px;
+
+}
+
+/* UCH-lu Classi */
+.uchlu {
+    padding: 50px;
+    padding-top: 150px;
+
+}
+
+.uchlu a {
+    background-color: #f8b1a5;
+    color: #413f40;
+    font-size: 18px;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.uchlu-sol-button,
+.uchlu-orta-button,
+.uchlu-sag-button {
+    margin: 50px 0;
+}
+
+
+.uchlu-sol,
+.uchlu-orta,
+.uchlu-sag {
+    border: 0.1px solid rgb(125, 17, 125);
+    border-radius: 54px;
+    transform: scale(0.95);
+    transition: 1.1s ease;
+    padding: 20px;
+}
+
+.uchlu-sol:hover,
+.uchlu-orta:hover,
+.uchlu-sag:hover {
+    transform: scale(1);
+}
+
+
+
+/* DISCOVER */
+
+.discover-left img {
+    margin-top: 180px;
+}
+
+.discover-right a {
+    background-color: #f8b1a5;
+    color: #413f40;
+    font-size: 20px;
+    padding: 8px 15px;
+}
+
+
+
+/* LOGOS -FROM SWIPERJS SAYTI*/
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 260px;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* dashanlari gizle  */
+}
+
+.swiper-slide img {
+    display: block;
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    align-items: center;
+    padding-bottom: 50px;
+
+}
+
+
+
+/* Mehsullar-cardlar */
+.cards h1 {
+    padding-top: 200px;
+}
+
+.card img {
+    width: 300px;
+    height: 330px;
+    margin: auto; /* shekli merkeze getirmek uchun istfade eledm */
+}
+
+.card {
+    height: 500px;
+    margin-top: 50px;
+}
+
+.card .card-body {
+    margin-top: 60px;
+}
+
+
+
+
+@media(min-width:768px) {
+
+    .introduction .fa-bars {
+        display: none;
+    }
+
+    .introduction .intro-right {
+        display: flex;
+        gap: 50px;
+        margin-top: 20px;
+    }
+
+    .card img {
+        width: 250px;
+        height: 300px;
+    }
+
+    .discover {
+        display: flex;
+        justify-content: space-between;
+        padding: 150px 40px 0px 20px !important;
+        gap: 30px;
+    }
+
+    .discover-left img {
+        width: 450px;
+        margin-top: 55px !important;
+        align-items: center;
+    }
+}
+
+
+@media(min-width:1280px) {
+    .introduction .intro-right {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .introduction .fa-bars {
+        display: none;
+    }
+
+    .discover {
+        padding: 100px !important;
+    }
+
+    .discover-left img {
+        width: 550px;
+    }
+
+    .discover-right h1 {
+        padding-top: 70px !important;
+    }
+
+    /* LOGOLAR BOYUK EKRANDA CHOX BOYUK OLDGU UCHN  DEYISHECEM BURDA */
+
+    .swiper-slide img {
+        width: 80%; /* faizin azaltdmki balacalashsin */
+        padding-left: 100px;
+        margin-top: 20px;
+    }
+}
